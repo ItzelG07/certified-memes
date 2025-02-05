@@ -1,0 +1,118 @@
+body {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffcfd8; 
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    height: 100vh;
+}
+
+.everything-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgb(231, 147, 147);
+    height: 80%;
+    width: 80%;
+    /*adjust later*/
+}
+
+h1 {    
+    color: #ff1493; 
+    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.3);
+}
+
+.slideshow-container {
+    /*max-width:*/
+    position: relative;
+    /*margin*/
+}
+
+.card {
+    /*display: none; */
+    background-color: white;
+    border: 4px solid black;
+    /* change color later */
+    border-radius: 10px;
+    text-align: center;
+    /*add margin vh*/
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2vh;
+    /*adjust later*/
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    /*  top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px; */
+    color:bisque;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: black;
+}
+
+.text {
+    color: black;
+    /*font*/
+    /* 
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    */
+    position: absolute;
+    text-align: center;
+}
+
+.certificate {
+    cursor: pointer;
+    /*height:
+    width:
+    margin:*/
+    color: white;
+    background-color: #ff1493;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .certificate:hover {
+    background-color: black;
+}
+
+/*button {
+    /*font family
+    background-color: blue;
+    color: black;
+    /*margin to add space around the text-go by % vh vw
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgb(231, 147, 147);
+    margin-top: 2vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* ^could change that later
+}
+
+button:hover {
+    background-color: aqua;
+}*/
