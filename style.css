@@ -2,117 +2,187 @@ body {
     font-family: "Jersey 10", serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #ffcfd8; 
+    background-color:  #ffcfd8; 
+    background: url('Images/background.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ff1493; 
+    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.3);
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
-    height: 100vh;
+    margin-top: 5%;
+}
+
+/* Slideshow container */
+:root {
+	--pixel-bg: #ffcfd8; /* Inner background color */
+	--pixel-border: #ff1493; /* Inner border color: */
+	--pixel-border-2: #ffffff; /* Middle border color: */
+	--pixel-border-3: var(--pixel-border); /* Outer border color */
+	--pixel: .125rem; /* Pixel size */
 }
 
 .everything-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    box-shadow: rgb(231, 147, 147);
-    height: 80%;
+    background: var(--pixel-bg);
     width: 80%;
-    /*adjust later*/
-}
-
-h1 {    
-    color: #ff1493; 
-    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.3);
+    max-width: 900px;
+    margin: 0 auto;
+	box-shadow:
+		
+	/* Inner Background Color */
+		0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+		0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+		0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+		0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+		0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+		0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+		0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+		0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+		
+	/* Pixel Border Layer 1 */
+		calc(var(--pixel) * -1) 0 0 0 var(--pixel-border),
+		var(--pixel) 0 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * -2) 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * 2) 0 0 var(--pixel-border),
+		0 calc(var(--pixel) * -5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+		0 calc(var(--pixel) * 5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+		0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+		0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+		0 calc(var(--pixel) * -10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+		0 calc(var(--pixel) * 10) 0 calc(var(--pixel) * -4) var(--pixel-border),
+		0 calc(var(--pixel) * -13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+		0 calc(var(--pixel) * 13) 0 calc(var(--pixel) * -6) var(--pixel-border),
+		
+	/* Pixel Border Layer 2 */
+		calc(var(--pixel) * -2) 0 0 0 var(--pixel-border-2),
+		calc(var(--pixel) * 2) 0 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * -1) 0 var(--pixel) var(--pixel-border-2), 
+		0 var(--pixel) 0 var(--pixel) var(--pixel-border-2),
+		0 calc(var(--pixel) * -4) 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * 4) 0 0 var(--pixel-border-2),
+		0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+		0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -1) var(--pixel-border-2),
+		0 calc(var(--pixel) * -8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+		0 calc(var(--pixel) * 8) 0 calc(var(--pixel) * -2) var(--pixel-border-2),
+		0 calc(var(--pixel) * -11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+		0 calc(var(--pixel) * 11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
+		0 calc(var(--pixel) * -14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+		0 calc(var(--pixel) * 14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
+		
+	/* Border Layer 3: --pixel-border-3 */
+		calc(var(--pixel) * -3) 0 0 0 var(--pixel-border-3),
+		calc(var(--pixel) * 3) 0 0 0 var(--pixel-border-3),
+		0 0 0 calc(var(--pixel) * 2) var(--pixel-border-3),
+		0 calc(var(--pixel) * -3) 0 var(--pixel) var(--pixel-border-3),
+		0 calc(var(--pixel) * 3) 0 var(--pixel) var(--pixel-border-3),
+		0 calc(var(--pixel) * -5) 0 0 var(--pixel-border-3),
+		0 calc(var(--pixel) * 5) 0 0 var(--pixel-border-3),
+		0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+		0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+		0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -2) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -2) var(--pixel-border-3),
+		0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -4) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -4) var(--pixel-border-3),
+		0 calc(var(--pixel) * -15) 0 calc(var(--pixel) * -6) var(--pixel-border-3), 
+		0 calc(var(--pixel) * 15) 0 calc(var(--pixel) * -6) var(--pixel-border-3);
 }
 
 .slideshow-container {
-    /*max-width:*/
-    position: relative;
-    /*margin*/
+  background-color: transparent;
+  width: 95%;
+  max-width: 900px;
+  height: 300px;
+  max-height: 40%;
+  position: relative;
+  margin: 0 auto; /* I need to center this container within the pixelated border container*/
+  /*margin-right: 20%;
+  margin-left: 20%;*/
+  margin-top: 5%;
 }
 
-.card {
-    /*display: none; */
-    background-color: white;
-    border: 4px solid black;
-    /* change color later */
-    border-radius: 10px;
-    text-align: center;
-    /*add margin vh*/
-}
-
-.card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 2vh;
-    /*adjust later*/
-}
-
+/* Next & previous buttons */
 .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    /*  top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px; */
-    color:bisque;
-    transition: 0.3s ease;
-    border-radius: 10px;
-    user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: 2%;
+  margin-top: 2vh;
+  color: #ff1493;
+  font-family: "Jersey 10", serif;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
+/* Position the "next button" to the right */
 .next {
-    right: 0;
-    border-radius: 10px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: black;
+  background-color: transparent;
+  color: white;
 }
 
+/* Caption text */
 .text {
-    color: black;
-    /*font*/
-    /* 
-    padding: 8px 12px;
-    bottom: 8px;
-    width: 100%;
-    */
-    position: absolute;
-    text-align: center;
+  color: #ff1493;
+  font-size: 30px;
+  margin: none;
+  position: absolute;
+  bottom: 2vh;
+  width: 100%;
+  text-align: center;
 }
 
-.certificate {
-    cursor: pointer;
-    /*height:
-    width:
-    margin:*/
-    color: white;
-    background-color: #ff1493;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ff1493;
+  font-size: 30px;
+  padding: 1%;
+  position: absolute;
+  top: 0;
 }
 
-.active, .certificate:hover {
-    background-color: black;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8vh;
+  width: 10vw;
+  margin: 0 1vw;
+  margin-top: 2%;
+  background-color: #ff7dbe;
+  border-radius: 5%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.6s ease;
+  font-size: 36px;
+  color: white;
 }
 
-/*button {
-    /*font family
-    background-color: blue;
-    color: black;
-    /*margin to add space around the text-go by % vh vw
-    border: none;
-    border-radius: 10px;
-    box-shadow: rgb(231, 147, 147);
-    margin-top: 2vh;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    /* ^could change that later
+.active, .dot:hover {
+  background-color: #ff1493;
 }
 
-button:hover {
-    background-color: aqua;
-}*/
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
