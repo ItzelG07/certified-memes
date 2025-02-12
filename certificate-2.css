@@ -1,0 +1,183 @@
+body {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;            
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+    border: 20px solid #FF7DBE;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#ctrl-p {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    top: 2%;
+    font-size: 68px;
+    color: #ff0088; 
+    text-shadow: 2px 2px 4px rgba(110, 17, 67, 0.3);
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 2%;
+    color: #FF7DBE;
+}
+
+p {
+    font-size: 36px;
+    margin: 2% 0;
+    color: #FF7DBE;
+
+}
+
+input {
+    font-size: 48px;
+    padding: 1%;
+    margin: 1% 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #FF7DBE;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;            
+}
+
+input:focus {
+    border: none;
+}
+
+input::placeholder {
+    color: #FF7DBE;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.name {
+    font-family: "Italianno", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.signature {
+    /*flex: 1;*/
+    text-align: center;
+}
+
+hr {
+    width: 26vw;
+    border: 2px solid #FF7DBE;
+    margin: 1%;
+}
+
+.date {
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.top-left, .top-right {
+    position: absolute;
+    top: 2%;
+    width: 20%;
+    height: auto;
+}
+
+.top-left {
+    left: 0%;
+}
+
+.top-right {
+    right: 0%;
+}
+
+.corner-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bottom-middle {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 20%;
+}
+
+.date {
+    color:#FF7DBE;
+    display: flex;
+    justify-content: center;
+}
+
+@media print {
+    @page {
+    size: 11in 8.5in;
+    margin: 0.5in;
+    }
+
+    h1 {
+    font-size: 64px;
+    }
+
+    p {
+    font-size: 24px;
+    }
+
+    .signatures {
+    margin-top: 0%;
+    }
+
+    .date {
+    font-size: 18px;
+    }
+
+    .top-left, .top-right {
+        position: absolute;
+        top: 2%;
+        width: 20%;
+        height: auto;
+    }
+    
+    .top-left {
+        left: 0%;
+    }
+    
+    .top-right {
+        right: 0%;
+    }
+    
+    .corner-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .bottom-middle {
+        position: absolute;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 20%;
+    }
+
+    #ctrl-p {
+        display: none;
+    }
+}

@@ -22,7 +22,6 @@ h2 {
   text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.3);
   display: flex;
   justify-content: center;
-  margin-top: 2%;
 }
 
 /* Slideshow container */
@@ -109,14 +108,24 @@ h2 {
   margin: 0 auto; /* I need to center this container within the pixelated border container*/
   /*margin-right: 20%;
   margin-left: 20%;*/
-  margin-top: 5%;
+}
+
+/*certificate Images*/
+.mySlides {
+  margin: 0;
+  height: 20vh;
+}
+
+.mySlides img {
+  scale: 40%;
+  margin-top: -25%;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 30%;
   width: 2%;
   margin-top: 2vh;
   color: #ff1493;
@@ -156,7 +165,7 @@ h2 {
   font-size: 30px;
   padding: 1%;
   position: absolute;
-  top: 0;
+  bottom: 1%;
 }
 
 /* buttons */
@@ -178,6 +187,37 @@ h2 {
 }
 
 .active, .dot:hover {
+  background-color: #ff1493;
+}
+
+.print-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.print {
+  cursor: pointer;
+  height: 8vh;
+  width: 34vw;
+  margin-top: 2%;
+  background-color: #ff7dbe;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.6s ease;
+  font-size: 36px;
+  font-family: "Jersey 10", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.print:hover {
   background-color: #ff1493;
 }
 

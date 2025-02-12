@@ -4,18 +4,26 @@
     <meta charset="utf-8">
     <title> Certificate 1 </title>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
     <link href="certificate-1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <section id="ctrl-p">
+        <!--Press <strong>Ctrl+P</strong> to Print-->
+    </section>
     <section class="certificate-container">
+        <section class="large-image">
+        <img src="Images/melody.png" alt="My Melody Character">
+        </section>
         <section class="certificate-title">
-            <h1>Certificate</h1> <br>
-            <h2>of appreciation</h2>
+            <h1>Certificate</h1>
+            <h2>OF APPRECIATION</h2>
+            <img src="Images/hearts.png">
+            <h2>This certificate is presented to:</h2>
         </section>
         <section class="input-group">
             <!--Name input form-->
-            <label for="name1"> Your Name </label>
-            <input type="name" id="name1" required> 
+            <input type="text" class="name-input" placeholder="Enter your name">
             <!--^change later because I dont know if using "name1" is useful-->   
         </section>
 
@@ -23,25 +31,25 @@
 
         <section class="description">
             <!--details of certificate-->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Thank you for your hard work,<br> commitment, and dedication.</p>
         </section>
         <section class="signatures">
             <section class="signature-left">
-                <h2>Signature</h2>
-                <br>
-                <p>Job Title</p>
+                <h2>John Doe</h2>
+                <hr class="sig-underline">
+                <p>Director of Excellence</p>
                 <!--i dont think i need to put the signatures into its own container but make sure-->
                 <!--signature 1-->
                 <!--line break-->
                 <!--title of signature-->
             </section>
 
-            <!--trophy icon/seal <img>-->
+            <img src="Images/stash_trophy-solid.png">
 
             <section class="signature-right">
-                <h2>Signature</h2>
-                <br>
-                <p>Job Title</p>
+                <h2>Jane Doe</h2>
+                <hr class="sig-underline">
+                <p>Senior Appreciation Officer</p>
             </section>
         </section>
         <section class="date">
@@ -50,6 +58,6 @@
         </section>
 
     </section>
-    <script src="scripts/certificate-1.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>

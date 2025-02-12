@@ -1,0 +1,151 @@
+body {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;            
+    text-align: left;
+    margin: 0;
+    padding: 2%;
+    border: 20px dashed rgb(219, 0, 0);
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url(Images/red-checkers.jpg);
+    background-color: rgba(255,255,255,0.85);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ctrl-p {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    top: 2%;
+    font-size: 68px;
+    color: #ff0088; 
+    text-shadow: 2px 2px 4px rgba(110, 17, 67, 0.3);
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 2%;
+    color: black;
+}
+
+p {
+    font-size: 36px;
+    margin: 2% 0;
+    color: black;
+
+}
+
+input {
+    font-size: 48px;
+    margin: 1% 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;  
+}
+
+input:focus {
+    border: none;
+    background-color: none;
+
+}
+
+input::placeholder {
+    color: black;
+    background-color: none;
+
+}
+
+.signatures {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2%;
+    gap: 8%;
+}
+
+.name {
+    font-family: "Italianno", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.signature {
+    text-align: center;
+}
+
+hr {
+    width: 26vw;
+    border: 2px solid black;
+    margin: 1%;
+}
+
+.date {
+    font-size: 28px;
+    margin-top: 5%;
+    color:black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image-placeholder {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media print {
+    @page {
+    size: 11in 8.5in;
+    margin: 0.5in;
+    }
+
+    h1 {
+    font-size: 64px;
+    }
+
+    p {
+    font-size: 24px;
+    }
+
+    .signatures {
+    margin-top: 0%;
+    }
+
+    .date {
+    font-size: 18px;
+    }
+
+    .image-placeholder {
+        width: 30%;
+        height: 30%;
+        right: 0%;
+    }
+
+    .image-placeholder img{
+        width: 100%;
+        height: auto;
+    }
+
+    #ctrl-p {
+        display: none;
+    }
+}
